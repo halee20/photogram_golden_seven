@@ -1,0 +1,14 @@
+<h1>Update your photo </h1>
+<form action="http://localhost:3000/update_row/<%= @photo_id %>">
+
+  <label for="new_caption">Caption:</label>
+  <input type = "text" id="new_caption" name="the_caption" value= "<%= @photo_caption %>" >
+
+
+  <label for="new_source">Image URL:</label>
+  <input type = "text" id="new_source" name="the_source" value="<%= @photo_source %>">
+
+
+  <button>Update Photo </button>
+
+</form>
